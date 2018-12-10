@@ -43,7 +43,7 @@ h2 {
 }
 
 .mainHeader nav {
-	background-color:var(--primary-color);
+	background-color: var(--primary-color);
 }
 
 .mainHeader nav ul {
@@ -119,13 +119,11 @@ h2 {
 /* First post style */
 .One {
   background-color: #123456;
-
 }
 
 .Firstcontainer {
 	display: grid;
 	grid-template-columns: auto auto auto auto auto;
-
 }
 
 .container {
@@ -197,11 +195,33 @@ h2 {
 }
 
 /* Style of the Contact form*/
+#OrdersTittle {
+	background-color: pink;
+	grid-area: top_left;
+	margin: 0;
+	padding: 30%;
+}
+
+#OrdersBackground { grid-area: right; }
+
 .ContactBody {
-	background-image: url("img/NikeShorts4.jpg");
-	padding: 50px 100px;
+	background-color: white;
+	max-height: 720px;
+	max-width: 1580px;
+	overflow-x: hidden;
+	overflow-y: hidden;
 	font-size: 13px;
 	font-style: Verdana, Tahoma, sans-serif;
+	display: grid;
+	grid-template-areas:
+	'top_left right'
+	'left right';
+}
+
+.form {
+	padding-left: 15%;
+	background-color: pink;
+	grid-area: left;
 }
 
 input, textarea {
@@ -251,8 +271,9 @@ input:hover, textarea:hover, input:focus, textarea:focus {
 	-moz-box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 8px;
 	-webkit-box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 8px;
 	background-color: #585d73;
-
 }
+
+#OrdersBackground { width: 100%; }
 /*END Style of the contact form */
 
 .mainFooter {
@@ -333,3 +354,5 @@ input:hover, textarea:hover, input:focus, textarea:focus {
 		align: center;
 	}
 }
+
+@media only screen and (min-width: 150px) and (max-width: 1580px)
