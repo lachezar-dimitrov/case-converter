@@ -199,7 +199,7 @@ h2 {
 	background-color: pink;
 	grid-area: top_left;
 	margin: 0;
-	padding: 30%;
+	padding: 20%;
 }
 
 #OrdersBackground { grid-area: right; }
@@ -219,7 +219,7 @@ h2 {
 }
 
 .form {
-	padding-left: 15%;
+	padding: 10%;
 	background-color: pink;
 	grid-area: left;
 }
