@@ -1,12 +1,11 @@
 :root {
-	--primary-color:#F1F1F1;
-	--secondary-color:#710016;
-	--trird-color:#0A0A0A;
-	--main-text-color:#FFF:
+	--primary-color: #f9ca26;
+	--trird-color: #0A0A0A;
+	--white-text: #FFF;
 }
 
 body {
-	color:var(--main-text-color);
+	color: var(--white-text);
   width: 100%;
   margin: 0;
 	font-size: 87.5%;
@@ -16,12 +15,13 @@ body {
 	text-align: left;
 }
 
-a{
+a {
+	font-size: 1.5vw;
   text-decoration:none;
 }
 
 a:link, a:visited {
-	color: #0A0A0A;
+	color: var(--white-text);
 }
 
 a:hover, a:active {
@@ -43,55 +43,40 @@ h2 {
 }
 
 .mainHeader nav {
-	background-color: var(--primary-color);
+	background-color: pink;
 }
 
 .mainHeader nav ul {
 	grid-template-columns: repeat(auto-fit, minmax(91px, 1fr));
 	display: grid;
 	align-content: center;
-	grid-column-gap: 9px;
-	grid-row-gap: 10px;
 	list-style: none;
+	padding: 0;
 	margin: 0 auto;
 }
 
 .mainHeader nav ul li {
-	float: left;
+	text-align: center;
 	display: inline;
 	list-style: none;
 }
 
 .mainHeader nav a:link, .mainHeader nav a:visited {
-	color: var(--text-color);
+	color: var(--white-text);
 	display: inline-block;
-	padding: 10px 25px;
-	height: 20px;
+	padding: 5% 30%;
+
 }
 
 .mainHeader nav a:hover, .mainHeader nav a:active, .mainHeader nav .active a:link, .mainHeader nav .active a:visited {
-	background-color: var(--secondary-color);
+	background-color: var(--primary-color);
 	text-shadow: none;
 }
 
 .mainHeader nav ul li a {
-	border-radius: 5px;
-	-noz-border-radius: 5px;
-	-wedkit-border-radius: 5px;
-}
-
-.Title {
-    background-color: var(--trird-color);
-    position: absolute;
-    top: 20%;
-    left: 10%;
-    padding: 20px;
-    text-align: center;
-    color: #FFF;
-    font-size: 2vw;
-    font-family: 'Pangolin', cursive;
-    border-radius: 10px;
-    letter-spacing: 8px;
+	border-radius: 15px;
+	-noz-border-radius: 15px;
+	-wedkit-border-radius: 15px;
 }
 
 .Header {
