@@ -179,6 +179,25 @@ h2 {
     padding: 20% 15%;
 }
 
+.mainFooter {
+	width: 100%;
+	border-radius: 5px;
+	-noz-border-radius: 5px;
+	-wedkit-border-radius: 5px;
+	background-color: #113355;
+	padding: 3% 0%;
+}
+
+.mainFooter p {
+	font-size: 120%;
+	width: 100%;
+	color: #000;
+}
+
+.mainFooter a {
+	font-size: 90%;
+}
+
 /* Style of the Contact form*/
 #OrdersTittle {
 	background-color: pink;
@@ -261,27 +280,7 @@ input:hover, textarea:hover, input:focus, textarea:focus {
 #OrdersBackground { width: 100%; }
 /*END Style of the contact form */
 
-.mainFooter {
-	width: 100%;
-	border-radius: 5px;
-	-noz-border-radius: 5px;
-	-wedkit-border-radius: 5px;
-	background-color: #113355;
-	padding: 3% 0%;
-}
-
-.mainFooter p {
-	font-size: 120%;
-	width: 100%;
-	color: #000;
-}
-
-.mainFooter a {
-	font-size: 90%;
-}
-
-
-@media only screen and (min-width: 150px) and (max-width: 780px)
+@media only screen and (min-width: 150px) and (max-width: 1000px)
 {
 
 	.body {
@@ -289,10 +288,10 @@ input:hover, textarea:hover, input:focus, textarea:focus {
 		font-size: 95%;
 	}
 
-	.mainHeader nav {
-		height: 200px;
+	a {
+		font-size: 2.5vw;
+		letter-spacing: 3px;
 	}
-
 	.mainHeader nav ul {
 		padding-left: 0;
 	}
@@ -304,13 +303,17 @@ input:hover, textarea:hover, input:focus, textarea:focus {
 
 	.mainHeader nav a:link, .mainHeader nav a:visited {
 		padding: 10px 25px;
-		height: 20px;
 		display: block;
 	}
 
 	.Title {
 		font-size: 60%;
 		position: sticky;
+	}
+
+	.Firstcontainer {
+		display: grid;
+		grid-template-columns: auto auto auto;
 	}
 
 	.Content {
