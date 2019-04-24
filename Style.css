@@ -6,9 +6,10 @@
 
 body {
 	color: var(--white-text);
+	background-color: var(--primary-color);
   width: 100%;
   margin: 0;
-	font-size: 87.5%;
+	font-size: 100%;
 	font-family: Arial, 'Lucida Sans Unicode';
   font-family: 'Pangolin', cursive;
 	line-height: 1.5;
@@ -36,69 +37,70 @@ h2 {
 	margin: 0 auto;
 }
 
-.body {
-	margin: 0 auto;
+h3 {
+	background-color: #234567;
+}
+
+Header nav {
+	background-color: green;
+	position: fixed;
 	width: 100%;
-	clear: both;
 }
 
-.mainHeader nav {
-	background-color: pink;
-}
-
-.mainHeader nav ul {
+Header nav ul {
 	grid-template-columns: repeat(auto-fit, minmax(91px, 1fr));
 	display: grid;
 	align-content: center;
 	list-style: none;
+	box-shadow: 0px 16px 32px 0px rgba(0,0,0,0.2);
 	padding: 0;
 	margin: 0 auto;
 }
 
-.mainHeader nav ul li {
+Header nav ul li {
 	text-align: center;
 	display: inline;
 	list-style: none;
 }
 
-.mainHeader nav a:link, .mainHeader nav a:visited {
+Header nav a:link, .mainHeader nav a:visited {
 	color: var(--white-text);
 	display: inline-block;
-	padding: 5% 30%;
-
+	padding: 5% 20%;
 }
 
-.mainHeader nav a:hover, .mainHeader nav a:active, .mainHeader nav .active a:link, .mainHeader nav .active a:visited {
+Header nav a:hover, .mainHeader nav a:active, .mainHeader nav .active a:link, .mainHeader nav .active a:visited {
 	background-color: var(--primary-color);
 	text-shadow: none;
 }
 
-.mainHeader nav ul li a {
+Header nav ul li a {
 	border-radius: 15px;
 	-noz-border-radius: 15px;
 	-wedkit-border-radius: 15px;
 }
 
-.Header {
-    position: relative;
-    opacity: 0.87;
-    background-image: url('img/back_3.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-		padding: 25% 15%;
+.title {
+	background-color: #F1F;
+	padding: 10%;
+	text-align: center;
 }
 
-.mainContent {
+.Post {
 	line-height: 25px;
 	border-radius: 5px;
 	-noz-border-radius: 5px;
 	-wedkit-border-radius: 5px;
 }
 
-.Content {
-	width: 100%;
-	float: none;
+.Paragraph {
+    background-color: #234567;
+    padding: 0 5%;
+}
+
+.Participants {
+    background-color: #876543;
+    padding: 0 5%;
 }
 
 /* First post style */
@@ -106,7 +108,8 @@ h2 {
   background-color: #123456;
 }
 
-.Firstcontainer {
+.Media {
+	padding: 0;
 	display: grid;
 	grid-template-columns: auto auto auto auto auto;
 }
@@ -153,31 +156,6 @@ h2 {
 
 }
 /* End first post style*/
-
-.Two {
-    background-color: #234567;
-    padding: 20% 15%;
-}
-
-.Three {
-    background-color: #345678;
-    padding: 20% 15%;
-}
-
-.Four {
-    background-color: #478956;
-    padding: 20% 15%;
-}
-
-.Five {
-    background-color: #589A67;
-    padding: 20% 15%;
-}
-
-.Six {
-    background-color: #89A67B;
-    padding: 20% 15%;
-}
 
 .mainFooter {
 	width: 100%;
@@ -301,9 +279,8 @@ input:hover, textarea:hover, input:focus, textarea:focus {
 		text-align: center;
 	}
 
-	.mainHeader nav a:link, .mainHeader nav a:visited {
-		padding: 10px 25px;
-		display: block;
+	Header nav a:link, .mainHeader nav a:visited {
+		padding: 10% 0;
 	}
 
 	.Title {
@@ -320,10 +297,6 @@ input:hover, textarea:hover, input:focus, textarea:focus {
 		width: 100%;
 		float: left;
 		margin-top: 0%;
-	}
-
-	.Two, .Three, .Four, .Five, .Six{
-		margin-top: 3%;
 	}
 
 	.mainFooter {
