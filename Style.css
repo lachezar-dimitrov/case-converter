@@ -1,28 +1,29 @@
 :root {
-	--primary-color: #f9ca26;
+	--primary-color: white;
 	--trird-color: #0A0A0A;
 	--white-text: #FFF;
 }
 
 body {
-	color: var(--white-text);
-	background-color: var(--primary-color);
-  width: 100%;
-  margin: 0;
-	font-size: 100%;
-	font-family: Arial, 'Lucida Sans Unicode';
-  font-family: 'Pangolin', cursive;
+    color: black;
+    background-color: var(--primary-color);
+    width: 100%;
+    margin: 0;
+    font-size: 100%;
+
+    font-family: 'PT Serif Caption', serif;
 	line-height: 1.5;
 	text-align: left;
 }
 
 a {
-	font-size: 1.5vw;
-  text-decoration:none;
+    font-size: 1.5vw;
+    text-decoration:none;
+    height: 34px;
 }
 
 a:link, a:visited {
-	color: var(--white-text);
+	color: black;
 }
 
 a:hover, a:active {
@@ -41,10 +42,12 @@ h3 {
 	background-color: #234567;
 }
 
-Header nav {
-	background-color: green;
+nav {
+    font-family: 'Alice', serif;
+	background-color: #FFF;
 	position: fixed;
 	width: 100%;
+    display: block;
 }
 
 Header nav ul {
@@ -63,8 +66,15 @@ Header nav ul li {
 	list-style: none;
 }
 
+.mentormate-logo {
+    background-image: url('img/mentormate-logo.svg');
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    display: block;
+}
+
 Header nav a:link, .mainHeader nav a:visited {
-	color: var(--white-text);
+	color: black;
 	display: inline-block;
 	padding: 5% 20%;
 }
@@ -80,12 +90,6 @@ Header nav ul li a {
 	-wedkit-border-radius: 15px;
 }
 
-.title {
-	background-color: #F1F;
-	padding: 10%;
-	text-align: center;
-}
-
 .Post {
 	line-height: 25px;
 	border-radius: 5px;
@@ -95,11 +99,6 @@ Header nav ul li a {
 
 .Paragraph {
     background-color: #234567;
-    padding: 0 5%;
-}
-
-.Participants {
-    background-color: #876543;
     padding: 0 5%;
 }
 
@@ -281,11 +280,6 @@ input:hover, textarea:hover, input:focus, textarea:focus {
 
 	Header nav a:link, .mainHeader nav a:visited {
 		padding: 10% 0;
-	}
-
-	.Title {
-		font-size: 60%;
-		position: sticky;
 	}
 
 	.Firstcontainer {
