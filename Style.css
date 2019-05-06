@@ -31,6 +31,7 @@ a:hover, a:active {
 }
 
 h1, h3, h5, h6 {
+    border-radius: 15%;
     margin: 0;
     background-color: var(--text);
 }
@@ -49,7 +50,7 @@ ul {
 .mentormate-logo {
     background-image: url('img/mentormate-logo.png');
     background-repeat: no-repeat;
-    background-size: auto 90%;
+    background-size: auto 100%;
     background-position: center;
 }
 
@@ -60,7 +61,7 @@ nav {
 	position: fixed;
 	width: 100%;
     display: grid;
-    grid-template-areas: '. nav nav nav';
+    grid-template-areas: '. nav nav';
     box-shadow: 0px 16px 32px 0px rgba(0,0,0,0.2);
 }
 
@@ -299,7 +300,6 @@ input:hover, textarea:hover, input:focus, textarea:focus {
 
     .middle h3{
         font-size: 4vw;
-        border-radius: 15%;
         padding: 1%;
     }
 
@@ -308,7 +308,7 @@ input:hover, textarea:hover, input:focus, textarea:focus {
     }
 
     .middle a, .middle p {
-        opacity: 0;        
+        opacity: 0;
     }
 
     .container:hover .middle a, .container:hover .middle p{
