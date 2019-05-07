@@ -21,6 +21,7 @@ a {
     letter-spacing: 2px;
     text-decoration:none;
 }
+
 a:link, a:visited {
 	color: var(--text);
 }
@@ -64,14 +65,14 @@ nav {
     box-shadow: 0px 16px 32px 0px rgba(0,0,0,0.2);
 }
 
-header nav ul {
+Header nav ul {
 	grid-template-columns: repeat(auto-fit, minmax(91px, 1fr));
 	display: grid;
 	align-content: center;
     grid-area: nav;
 }
 
-header nav ul li {
+Header nav ul li {
 	text-align: center;
 	display: inline;
 	list-style: none;
@@ -79,7 +80,8 @@ header nav ul li {
 
 Header nav a:link {
 	display: inline-block;
-	padding: 5% 30%;
+	padding: 5% 20%;
+}
 
 Header nav a:hover, .mainHeader nav a:active, .mainHeader nav .active a:link, .mainHeader nav .active a:visited {
 	color: var(--hover);
@@ -94,14 +96,11 @@ Header nav a:hover, .mainHeader nav a:active, .mainHeader nav .active a:link, .m
     color: var(--text);
 }
 
-article {
+.Post {
 	line-height: 25px;
 	border-radius: 5px;
-	width: 100%;
-	float: none;
-	background-color: var(--navigation-color);
-	padding: 30% 0%;
-	text-align: center;
+	-noz-border-radius: 5px;
+	-wedkit-border-radius: 5px;
 }
 
 .Media {
@@ -115,12 +114,8 @@ article {
 }
 
 .container img {
-	display: block;
-  margin-left: auto;
-  margin-right: auto;
 	width: 100%;
 	height: auto;
-	border-radius: 100%;
 }
 
 .image {
@@ -256,7 +251,15 @@ input:hover, textarea:hover, input:focus, textarea:focus {
 	-webkit-border-radius: 3px;
 }
 
+.submit input:hover {
+	box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 8px;
+	-moz-box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 8px;
+	-webkit-box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 8px;
+	background-color: #585d73;
 }
+
+#OrdersBackground { width: 100%; }
+/*END Style of the contact form */
 
 @media only screen and (min-width: 150px) and (max-width: 1000px)
 {
@@ -322,3 +325,5 @@ input:hover, textarea:hover, input:focus, textarea:focus {
         text-align: center;
     }
 }
+
+@media only screen and (min-width: 150px) and (max-width: 1580px)
