@@ -1,58 +1,74 @@
 :root {
-	--hover-color: #86C21F;
-	--trird-color: #0A0A0A;
-	--navigation-color: #123456;
+	--primary-color: white;
+	--text: #455963;
+	--hover: black;
+    --footer: #3e5e7e;
 }
 
 body {
-	color: white;
-  width: 100%;
-  margin: 0;
-	font-size: 87.5%;
-	font-family: Arial, 'Lucida Sans Unicode';
-  font-family: 'Pangolin', cursive;
+    color: var(--hover);
+    background-color: var(--primary-color);
+    width: 100%;
+    margin: 0;
+    font-size: 1vw;
+    font-family: 'PT Serif Caption', serif;
 	line-height: 1.5;
 	text-align: left;
 }
 
 a {
-	font-size: 1.5vw;
-  text-decoration:none;
+    font-size: 1.8vw;
+    letter-spacing: 2px;
+    text-decoration:none;
 }
-
 a:link, a:visited {
-	color: white;
+	color: var(--text);
 }
 
 a:hover, a:active {
-	color: var(--trird-color);
+	color: var(--text);
 }
 
-h1 {
+h1, h3, h5, h6 {
+    border-radius: 15%;
+    margin: 0;
+    background-color: var(--text);
+}
+
+h4, h2 {
+    margin: 0;
+    letter-spacing: 3px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
 	margin: 0;
 }
 
-h2 {
-	margin: 0 auto;
+.mentormate-logo {
+    background-image: url('img/mentormate-logo.png');
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center;
 }
 
-.body {
-	margin: 0 auto;
+nav {
+    z-index: 1;
+    font-family: 'Alice', serif;
+	background-color: var(--primary-color);
+	position: fixed;
 	width: 100%;
-	clear: both;
-}
-
-header nav {
-	background-color: var(--navigation-color);
+    display: grid;
+    grid-template-areas: '. nav nav';
+    box-shadow: 0px 16px 32px 0px rgba(0,0,0,0.2);
 }
 
 header nav ul {
 	grid-template-columns: repeat(auto-fit, minmax(91px, 1fr));
 	display: grid;
 	align-content: center;
-	list-style: none;
-	padding: 0;
-	margin: 0 auto;
+    grid-area: nav;
 }
 
 header nav ul li {
@@ -61,20 +77,21 @@ header nav ul li {
 	list-style: none;
 }
 
-header nav a:link, header nav a:visited {
-	color: white;
+Header nav a:link {
 	display: inline-block;
 	padding: 5% 30%;
 
+Header nav a:hover, .mainHeader nav a:active, .mainHeader nav .active a:link, .mainHeader nav .active a:visited {
+	color: var(--hover);
+	text-shadow: none;
 }
 
-header nav a:hover, header nav a:active, header nav .active a:link, header nav .active a:visited {
-	background-color: var(--hover-color);
-	text-shadow: 2%;
-}
-
-header nav ul li a {
-	border-radius: 15px;
+.fixed-position {
+    background-color: var(--primary-color);
+    padding: 2%;
+    font-size: 3.5vw;
+    text-align: center;
+    color: var(--text);
 }
 
 article {
@@ -87,35 +104,10 @@ article {
 	text-align: center;
 }
 
-article ul {
-	grid-template-columns: repeat(auto-fit, minmax(91px, 1fr));
+.Media {
+	padding: 0 5%;
 	display: grid;
-	align-content: center;
-	list-style: none;
-	padding: 0;
-	margin: 0 auto;
-	background-color: var(--hover-color);
-}
-
-article ul li {
-	text-align: center;
-	display: inline;
-	list-style: none;
-}
-
-/*Style of the Players page*/
-
-#Field {
-	padding: 10% 10%;
-	background-image: url('img/back.jpg');
-	background-size: cover;
-}
-
-.Players {
-	display: grid;
-	grid-template-columns: auto auto auto auto auto;
-	grid-column-gap: 5%;
-	margin-bottom: 25%;
+	grid-template-columns: auto auto;
 }
 
 .container {
@@ -138,18 +130,18 @@ article ul li {
 }
 
 .middle {
-	text-align: center;
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+    transition: .8s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .container:hover .image {
-  border-radius: 0;
+  opacity: 0.2;
 }
 
 .container:hover .middle {
@@ -157,73 +149,176 @@ article ul li {
 }
 
 .middle a {
-  background-color: var(--hover-color);
+  background-color: #4CAF50;
   color: white;
   font-size: 1.5vw;
 }
-/*END Style of the Players page*/
 
 footer {
-	width: 100%;
-	background-color: var(--navigation-color);
-	padding: 0;
+    font-family: 'Alice', serif;
+    background-color: var(--footer);
+    color: var(--primary-color);
+	text-align: left;
+	list-style: none;
+	padding: 1% 5%;
+	margin: 0;
 }
 
-footer p {
-	text-align: center;
-	margin: 0px;
-	font-size: 120%;
-	width: 100%;
-	color: #000;
+footer a:hover, footer a:active {
+    color: var(--primary-color);
 }
 
-footer a {
-	font-size: 95%;
-	text-align: center;
-	display: block;
-	margin: 0, auto;
+footer a:link, footer a:visited {
+    color: var(--primary-color);
+}
+
+.links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(91px, 1fr));
+    align-content: center;
+    margin-bottom: 3%;
+}
+
+.address {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+/* Style of the Contact form*/
+#OrdersTittle {
+	background-color: pink;
+	grid-area: top_left;
+	margin: 0;
+	padding: 20%;
+}
+
+#OrdersBackground { grid-area: right; }
+
+.ContactBody {
+	background-color: white;
+	max-height: 720px;
+	max-width: 1580px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	font-size: 13px;
+	font-style: Verdana, Tahoma, sans-serif;
+	display: grid;
+	grid-template-areas:
+	'top_left right'
+	'left right';
+}
+
+.form {
+	padding: 10%;
+	background-color: pink;
+	grid-area: left;
+}
+
+input, textarea {
+	padding: 10px;
+	border: 1px solid #E5E5E5;
+	width: 200px;
+	color: gray;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+}
+
+textarea {
+	width: 400px;
+	max-width: 400px;
+	min-width: 400px;
+	height: 150px;
+	min-height: 50px;
+	max-height: 500px;
+	line-height: 18px;
+}
+
+input:hover, textarea:hover, input:focus, textarea:focus {
+	border-color: 1px solid #C9C9C9;
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
+}
+
+.form label {
+	margin-left: 10px;
+	color: gray;
+}
+
+.submit input {
+	width: 100px;
+	height: 40px;
+	background-color: #474E69;
+	color: #FFF;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
 
 }
 
 @media only screen and (min-width: 150px) and (max-width: 1000px)
 {
+    body {
+        font-size: 2.5vw;
+    }
 
-	.body {
-		width: 90%;
-		font-size: 95%;
-	}
+    a {
+        font-size: 4vw;
+    }
 
-	a {
-		font-size: 2.5vw;
-		letter-spacing: 3px;
-	}
+    .mentormate-logo {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
 
-	header nav ul {
-		padding-left: 0;
-	}
+    nav {
+        display: block;
+        position: static;
+        box-shadow: 0px 16px 32px 0px rgba(0,0,0,0.2);
+    }
 
-	header nav ul li {
-		width: 100%;
-		text-align: center;
-	}
+    Header nav ul {
+        grid-template-columns: auto auto;
+        padding-left: 0;
+        line-height: 0;
+    }
 
-	header nav a:link, header nav a:visited {
-		padding: 10% 0%;
-		display: block;
-	}
+    Header nav a:link {
+    padding: 7% 0%;
+    }
+
+    .Media {
+    	grid-template-columns: auto;
+        padding: 0;
+    }
+
+    .middle h3{
+        font-size: 4vw;
+        padding: 1%;
+    }
+
+    .middle {
+        opacity: 1;
+    }
+
+    .middle a, .middle p {
+        opacity: 0;
+    }
+
+    .container:hover .middle a, .container:hover .middle p{
+        opacity: 1;
+    }
 
 	.Firstcontainer {
 		display: grid;
 		grid-template-columns: auto auto auto;
 	}
 
-	.Content {
-		width: 100%;
-		float: left;
-		margin-top: 0%;
-	}
-
-	article {
-		margin-top: 3%;
-	}
+    footer {
+        padding: 1% 1%;
+        text-align: center;
+    }
 }
