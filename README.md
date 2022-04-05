@@ -1,1 +1,1 @@
-React native app for fun
+Jet Brains Academy Project
